@@ -8,16 +8,16 @@
   <meta name="description" content="Desenvolvedor Front End. Localizado em Chapecó">
   <link rel="icon" type="image/svg+xml" href="img/G.svg">
   <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet">
   <title>Gustavo Rost - Desenvolvedor</title>
 </head>
 
 <body>
-  <header class="header">
-    <nav>
-      <div></div>
+  <header>
+    <nav class="header">
+      <a id="dev" href="#">Gustavo Rost Dev</a>
       <ul class="header-menu">
         <li><a href="#experiencia">Experiência</a></li>
         <li><a href="#formacao">Formação</a></li>
@@ -26,26 +26,43 @@
     </nav>
   </header>
   <main class="container introducao">
+    <div>
+      <h1>Desenvolvedor Front End 👨🏻‍💻</h1>
+      <p></p>
+    </div>
     <img src="img/perfil.jpg" alt="Lobo Cinza">
     <div>
-      <h1>Desenvolvedor<br>Front End</h1>
-      <p>Localizado em Porto Alegre</p>
+      <h2>Um pouco sobre mim</h2>
+      <p></p>
     </div>
   </main>
   <section class="container experiencia" id="experiencia" aria-label="Experiência">
     <h2 class="subtitulo">Experiência</h2>
     <div>
-      <p class="experiencia-texto">Desenvolvo pequenos projetos como o Bikcraft utilizando apenas <strong> HTML</strong>,<strong> CSS</strong> e <strong>JavaScript</strong>.
+      <p class="experiencia-texto">Desenvolvo projetos e soluciono problemas utilizando <strong> HTML</strong>,<strong> CSS</strong>, <strong>JavaScript</strong> e <strong>Jquery</strong>.
       </p>
       <div class="empresa">
-        <span class="empresa-ano">2021 - Hoje</span>
+        <span class="empresa-ano">2021 - 22</span>
         <h3 class="empresa-titulo">FronteiraTec</h3>
         <span class="empresa-titulo">Diretor de Projetos</span>
-        <p class="empresa-texto">Trabalho no desenvolvimento de projetos de sites responsivos com CSS, JS, além de utilizar Bootstrap e Sass. Gerencio e participo ativamente das ações da empresa júnior em sua reestruturação.</p>
+        <p class="empresa-texto">Trabalhei no desenvolvimento de projetos de sites responsivos com CSS, JS, além de utilizar Bootstrap e Sass. Gerenciei e participei ativamente das ações da empresa júnior em sua reestruturação.</p>
         <ul class="empresa-habilidades">
           <li>HTML</li>
           <li>CSS</li>
           <li>JavaScript</li>
+        </ul>
+      </div>
+      <div class="empresa">
+        <span class="empresa-ano">2022 - Hoje</span>
+        <h3 class="empresa-titulo">Agrada Digital</h3>
+        <span class="empresa-titulo">Desenvolvedor Front End Jr</span>
+        <p class="empresa-texto">Trabalho diariamente com solução de problemas de layout e criação de novas features utilizando JavaScript ES6, Sass e Jquery. Utilizo dos recursos disponíveis plataforma de e-commerce Linx para atender as expectativas dos clientes. Além disso, auxilio meus colegas de trabalho (em especial os outros juniors da equipe) para que possamos evoluir em conjunto.</p>
+        <ul class="empresa-habilidades">
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>JQuery</li>
+          <li>Sass</li>
+          <li>Liquid</li>
         </ul>
       </div>
   </section>
@@ -54,7 +71,7 @@
       <h2 class="subtitulo">Formação</h2>
       <div>
         <p class="formacao-texto">
-          Proin id hendrerit leo, eu lobortis ipsum. Aenean tempus, diam id lacinia commodo, mi lorem viverra tellus, eget volutpat enim erat quis mi. <strong>Proin quis </strong>augue vestibulum, dictum ante in, efficitur augue. <strong> Nulla</strong> augue ligula, fermentum a ligula sed, luctus tincidunt dolor.
+          Iniciei minha formação profissional no ano de 2020 estudando e realizando diversos cursos livres na Udemy e na Origamid, além de utilizar recursos do Youtube e documentações da linguagem. Após ingressar na Universidade da Fronteira Sul, em 2021, fui morar em Chapecó para cursar Ciência da Computação. Atualmente, estou na mesma graduação, porém em outra universidade (Unisinos).
         </p>
 
         <ul class="faculdade-lista">
@@ -66,12 +83,7 @@
           <li class="faculdade">
             <span class="faculdade-tipo">Bacharel</span>
             <h3 class="faculdade-curso">Ciência da Computação</h3>
-            <span class="faculdade-instituicao">UFFS</span>
-          </li>
-          <li class="faculdade">
-            <span class="faculdade-tipo">Bacharel</span>
-            <h3 class="faculdade-curso">Ciência da Computação</h3>
-            <span class="faculdade-instituicao">UFFS</span>
+            <span class="faculdade-instituicao">Unisinos</span>
           </li>
         </ul>
         <div class="formacao-extra">
@@ -83,7 +95,8 @@
               <li>Desenvolvimento Web Completo<span>114h</span></li>
               <li>Bootstrap 4<span>5h</span></li>
               <li>JavaScript Completo ES6<span>37h</span></li>
-              <li>React Completo<span>18h</span></li>
+              <li>CSS com SASS<span>12h</span></li>
+              <li>JavaScript e Jquery<span>18h</span></li>
             </ul>
           </div>
           <div class="idiomas">
@@ -110,6 +123,8 @@
       </ul>
     </div>
   </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
