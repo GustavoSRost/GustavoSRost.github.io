@@ -1,0 +1,115 @@
+@import "./config/fontes";
+@import "./config/cores";
+body {
+  overflow-x: hidden;
+}
+.small {
+  @media screen and (min-width: 575px) {
+    display: none;
+  }
+}
+.hamburgerOpened {
+  max-height: 100%;
+  overflow-y: hidden;
+}
+$grid-pp: (
+  columns: 12,
+  gutter: 20px,
+  media: "screen and (max-width: 575px)",
+);
+$grid-p: (
+  columns: 12,
+  gutter: 20px,
+  media: "screen and (min-width: 575px) and (max-width:767px)",
+);
+$grid-m: (
+  columns: 12,
+  gutter: 20px,
+  media: "screen and (min-width: 768px) and (max-width:1100px)",
+);
+$grid-g: (
+  columns: 12,
+  gutter: 20px,
+  media: "screen and (min-width: 1101px) and (max-width:1300px)",
+);
+$grid-gg: (
+  columns: 12,
+  gutter: 20px,
+  media: "screen and (min-width: 1301px)",
+);
+
+$grid-smartphone: (
+  columns: 12,
+  gutter: 20px,
+  media: "screen and (max-width:1023px)",
+);
+$grid-desktop: (
+  columns: 12,
+  gutter: 20px,
+  media: "screen and (min-width:1024px)",
+);
+
+.container {
+  display: grid;
+  margin: 0 auto;
+  @media screen and (max-width: 575px) {
+    grid-template-columns: 1fr;
+    max-width: 80%;
+  }
+  @media screen and (min-width: 575px) and (max-width: 767px) {
+    grid-template-columns: 1fr;
+    max-width: 850px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1100px) {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1000px;
+  }
+  @media screen and (min-width: 1101px) and (max-width: 1300px) {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1200px;
+  }
+}
+img {
+  max-width: 100%;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    top: -150px;
+  }
+  to {
+    opacity: 1;
+    top: 0;
+  }
+}
+@keyframes x {
+  0% {
+    left: -100%;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes y {
+  0% {
+    right: 80%;
+  }
+
+  100% {
+    right: 10px;
+  }
+}
+@mixin gradient($color1, $color2) {
+  background: linear-gradient(to right, $color1, $color2);
+}
+@mixin gradient2($color1, $color2) {
+  background: linear-gradient(to bottom, $color1, $color2);
+}
+@mixin gradient3($color1, $color2) {
+  background: linear-gradient(to left, $color1, $color2);
+}
+@mixin gradient4($color1, $color2) {
+  background: linear-gradient(to top, $color1, $color2);
+}

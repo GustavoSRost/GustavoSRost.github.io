@@ -1,0 +1,90 @@
+body {
+  &.scrolled {
+    padding-top: 50px;
+  }
+  .introducao {
+    padding: {
+      top: 60px;
+    }
+    text-align: center;
+    h1 {
+      color: $color2;
+      @include bold;
+      font-size: $font-size-7;
+    }
+    p {
+      color: $branco;
+      @include regular;
+      margin-top: 0.5em;
+    }
+    img {
+      @media screen and (max-width: 575px) {
+        display: none;
+      }
+    }
+    h2 {
+      margin-top: 2.5em;
+      color: $color3;
+      @include bold;
+      font-size: $font-size-4;
+    }
+  }
+  .experiencia {
+    padding: {
+      top: 50px;
+    }
+    h2 {
+      color: $color2;
+      @include bold;
+      font-size: $font-size-4;
+    }
+    .experiencia-texto {
+      margin-top: 1em;
+      color: $branco;
+      @include regular;
+      font-size: $font-size-3;
+    }
+    .empresa {
+      background-color: $color5;
+      backdrop-filter: blur(64px);
+      margin-bottom: 20px;
+      padding: 8px;
+      border-radius: 8px;
+      border: 1px solid $color2;
+      margin-top: 2.5em;
+      span {
+        &.empresa-ano {
+          font-size: $font-size-1;
+        }
+        color: $color2;
+        @include bold;
+        font-size: $font-size-3;
+      }
+      h3 {
+        color: $color3;
+        @include medium;
+        font-size: $font-size-3;
+      }
+      p {
+        color: $branco;
+        margin-top: 0.5em;
+        @include regular;
+        font-size: $font-size-2;
+      }
+      .empresa-habilidades {
+        margin-top: 1em;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        li {
+          color: $color2;
+          @include regular;
+          font-size: $font-size-2;
+          padding: 5px;
+          border-radius: 5px;
+          border: 1px solid $color2;
+        }
+      }
+    }
+  }
+}
