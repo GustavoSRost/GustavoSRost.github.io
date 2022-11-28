@@ -29,60 +29,170 @@ body {
       font-size: $font-size-4;
     }
   }
-  .experiencia {
+  .experiencia.container {
+    @media screen and (max-width: 575px) {
+      display: flex;
+      flex-direction: column;
+    }
     padding: {
       top: 50px;
     }
-    h2 {
+  }
+  .experiencia-texto {
+    margin-top: 1em;
+    color: $branco;
+    @include regular;
+    font-size: $font-size-3;
+  }
+  .slick-dots {
+    display: flex;
+    margin: 0 auto;
+    width: auto;
+    justify-content: center;
+    gap: 5px;
+    li {
+      &.slick-active {
+        button {
+          background-color: $color3;
+        }
+      }
+      button {
+        background-color: transparent;
+        border: 2px solid $color2;
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        font: {
+          size: 0;
+        }
+      }
+    }
+  }
+  .empresa {
+    margin-right: 10px;
+    background-color: $color5;
+    backdrop-filter: blur(64px);
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid $color2;
+    margin-top: 2.5em;
+    span {
+      &.empresa-ano {
+        font-size: $font-size-1;
+      }
       color: $color2;
       @include bold;
-      font-size: $font-size-4;
+      font-size: $font-size-3;
     }
-    .experiencia-texto {
+    h3 {
+      color: $color3;
+      @include medium;
+      font-size: $font-size-3;
+    }
+    p {
+      color: $branco;
+      margin-top: 0.5em;
+      @include regular;
+      font-size: $font-size-2;
+    }
+    .empresa-habilidades {
+      margin-top: 1em;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      li {
+        color: $color2;
+        @include regular;
+        font-size: $font-size-2;
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid $color2;
+      }
+    }
+  }
+  .formacao {
+    margin-top: 1.5em;
+    .formacao-texto {
       margin-top: 1em;
       color: $branco;
       @include regular;
       font-size: $font-size-3;
     }
-    .empresa {
-      background-color: $color5;
-      backdrop-filter: blur(64px);
-      margin-bottom: 20px;
-      padding: 8px;
-      border-radius: 8px;
-      border: 1px solid $color2;
-      margin-top: 2.5em;
-      span {
-        &.empresa-ano {
-          font-size: $font-size-1;
-        }
+    .faculdade-lista {
+      margin-top: 1em;
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 10px;
+      justify-content: center;
+      li {
         color: $color2;
-        @include bold;
-        font-size: $font-size-3;
-      }
-      h3 {
-        color: $color3;
-        @include medium;
-        font-size: $font-size-3;
-      }
-      p {
-        color: $branco;
-        margin-top: 0.5em;
         @include regular;
         font-size: $font-size-2;
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid $color2;
+        background-color: $color5;
+        .faculdade-instituicao {
+          color: $branco;
+          @include bold;
+        }
       }
-      .empresa-habilidades {
-        margin-top: 1em;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-        li {
-          color: $color2;
-          @include regular;
-          font-size: $font-size-2;
-          padding: 5px;
-          border-radius: 5px;
-          border: 1px solid $color2;
+    }
+    .formacao-extra {
+      background-color: $color5;
+      margin-top: 1em;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      border: 1px solid $color2;
+      border-radius: 8px;
+      padding: {
+        bottom: 20px;
+        left: 10px;
+        top: 20px;
+      }
+      h3 {
+        color: $branco;
+        @include medium;
+        font-size: $font-size-3;
+        margin-bottom: 5px;
+      }
+      li {
+        color: $color2;
+        @include regular;
+        font-size: $font-size-2;
+        padding: 5px;
+        border-radius: 5px;
+        &:before {
+          content: "\f14a";
+          font-family: FontAwesome;
+          color: $color3;
+          margin-right: 5px;
+        }
+        span {
+          color: $color3;
+          @include bold;
+          margin-left: 5px;
+        }
+      }
+      .cursos {
+        h3 {
+          &:before {
+            content: "\f121";
+            font-family: FontAwesome;
+            margin: 5px;
+            color: $color2;
+          }
+        }
+      }
+      .idiomas {
+        h3 {
+          &:before {
+            content: "\f1ab";
+            font-family: FontAwesome;
+            margin-right: 5px;
+            color: $color2;
+          }
         }
       }
     }

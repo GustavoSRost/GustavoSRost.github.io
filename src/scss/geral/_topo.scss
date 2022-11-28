@@ -96,8 +96,9 @@ body {
         .header-menu {
           display: flex;
           gap: 50px;
-          @media screen and (max-width: 575px) {
+          @media screen and (max-width: 768px) {
             flex-direction: column;
+            border-bottom: 1px solid #6d6d6d87;
           }
 
           &.hamburger {
@@ -105,7 +106,7 @@ body {
               animation: x linear 0.5s;
               position: fixed;
               left: 0;
-              top: 60px;
+              top: 65px;
               height: 50vh;
               background-color: $color1;
               width: 100vw;
@@ -155,10 +156,46 @@ body {
             }
           }
           .contato {
+            position: absolute;
+            bottom: 20px;
             ul {
+              display: inline-flex;
+              gap: 10px;
               li {
+                &#linkedin {
+                  &:before {
+                    content: "\f08c";
+                    font-family: "FontAwesome";
+                    color: $branco;
+                    font-size: $font-size-7;
+                  }
+                }
+                &#whatsapp {
+                  &:before {
+                    content: "\f232";
+                    font-family: "FontAwesome";
+                    color: $branco;
+                    font-size: $font-size-7;
+                  }
+                }
+                &#github {
+                  &:before {
+                    content: "\f09b";
+                    font-family: "FontAwesome";
+                    color: $branco;
+                    font-size: $font-size-7;
+                  }
+                }
+                &#email {
+                  &:before {
+                    content: "\f0e0";
+                    font-family: "FontAwesome";
+                    color: $branco;
+                    font-size: $font-size-7;
+                  }
+                }
                 a {
-                  font-size: 0;
+                  font-size: 0rem;
                 }
               }
             }

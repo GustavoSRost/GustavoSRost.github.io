@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <title>Gustavo Rost - Desenvolvedor</title>
 </head>
 
@@ -26,10 +27,10 @@
         <li><a href="#contato">Contato</a></li>
         <li class="small contato">
           <ul>
-            <li><a href="https://www.linkedin.com/in/gustavo-rost/">Linkedin</a></li>
-            <li><a href="https://wa.me/message/4I4AYLXSR62SA1">Whatsapp</a></li>
-            <li><a href="github.com/GustavoSRost">GitHub</a></li>
-            <li><a href="mailto:gustavosrost@outlook.com">E-mail</a></li>
+            <li id="linkedin"><a href="https://www.linkedin.com/in/gustavo-rost/">Linkedin</a></li>
+            <li id="whatsapp"><a href="https://wa.me/message/4I4AYLXSR62SA1">Whatsapp</a></li>
+            <li id="github"><a href="github.com/GustavoSRost">GitHub</a></li>
+            <li id="email"><a href="mailto:gustavosrost@outlook.com">E-mail</a></li>
           </ul>
     </nav>
   </header>
@@ -40,38 +41,40 @@
     </div>
     <img src="img/perfil.jpg" alt="Gustavo Rost Perfil">
     <div>
-      <h2>Um pouco sobre mim</h2>
+      <h2>Quem sou</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     </div>
   </main>
-  <section class="container experiencia" id="experiencia" aria-label="Experiência">
+  <section class="experiencia container" id="experiencia" aria-label="Experiência">
     <h2 class="subtitulo">Experiência</h2>
     <div>
       <p class="experiencia-texto">Desenvolvo projetos e soluciono problemas utilizando <strong> HTML</strong>,<strong> CSS</strong>, <strong>JavaScript</strong> e <strong>Jquery</strong>.
       </p>
-      <div class="empresa">
-        <span class="empresa-ano">2021 - 22</span>
-        <h3 class="empresa-titulo">FronteiraTec</h3>
-        <span class="empresa-titulo">Diretor de Projetos</span>
-        <p class="empresa-texto">Trabalhei no desenvolvimento de projetos de sites responsivos com CSS, JS, além de utilizar Bootstrap e Sass. Gerenciei e participei ativamente das ações da empresa júnior em sua reestruturação.</p>
-        <ul class="empresa-habilidades">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-        </ul>
-      </div>
-      <div class="empresa">
-        <span class="empresa-ano">2022 - Hoje</span>
-        <h3 class="empresa-titulo">Agrada Digital</h3>
-        <span class="empresa-titulo">Desenvolvedor Front End Jr</span>
-        <p class="empresa-texto">Trabalho diariamente com solução de problemas de layout e criação de novas features utilizando JavaScript ES6, Sass e Jquery. Utilizo dos recursos disponíveis plataforma de e-commerce Linx para atender as expectativas dos clientes. Além disso, auxilio meus colegas de trabalho (em especial os outros juniors da equipe) para que possamos evoluir em conjunto.</p>
-        <ul class="empresa-habilidades">
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>JQuery</li>
-          <li>Sass</li>
-          <li>Liquid</li>
-        </ul>
+      <div class="empresas">
+        <div class="empresa">
+          <span class="empresa-ano">2021 - 22</span>
+          <h3 class="empresa-titulo">FronteiraTec</h3>
+          <span class="empresa-titulo">Diretor de Projetos</span>
+          <p class="empresa-texto">Trabalhei no desenvolvimento de projetos de sites responsivos com CSS, JS, além de utilizar Bootstrap e Sass. Gerenciei e participei ativamente das ações da empresa júnior em sua reestruturação.</p>
+          <ul class="empresa-habilidades">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+        <div class="empresa">
+          <span class="empresa-ano">2022 - Hoje</span>
+          <h3 class="empresa-titulo">Agrada Digital</h3>
+          <span class="empresa-titulo">Desenvolvedor Front End Jr</span>
+          <p class="empresa-texto">Trabalho diariamente com solução de problemas de layout e criação de novas features utilizando JavaScript ES6, Sass e Jquery. Utilizo dos recursos disponíveis plataforma de e-commerce Linx para atender as expectativas dos clientes. Além disso, auxilio meus colegas de trabalho (em especial os outros juniors da equipe) para que possamos evoluir em conjunto.</p>
+          <ul class="empresa-habilidades">
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>JQuery</li>
+            <li>Sass</li>
+            <li>Liquid</li>
+          </ul>
+        </div>
       </div>
   </section>
   <section class="formacao" id="formacao" aria-label="Formação">
@@ -125,13 +128,15 @@
         Proin id hendrerit leo, eu lobortis ipsum. Aenean tempus, diam id lacinia commodo, mi lorem viverra tellus, eget volutpat enim erat quis mi.
       </p>
       <ul class="footer-contato">
-        <li>gustavosrost@outlook.com</li>
-        <li>+55 51 9 9607-6029</li>
-        <li><a href="">@gustavorost</a></li>
+        <li><a href="mailto:gustavosrost@outlook.com">gustavosrost@outlook.com</a></li>
+        <li><a href="https://wa.me/message/4I4AYLXSR62SA1">+55 51 99455-4449</a></li>
+        <li><a href="#">@gustavorost</a></li>
       </ul>
     </div>
   </footer>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://kit.fontawesome.com/beafc70229.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 
